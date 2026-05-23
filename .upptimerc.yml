@@ -25,21 +25,41 @@ sites:
     expectedStatusCodes: [200, 302]
 
   # ----------------------------------------------------------
-  # V2 (à venir) — état des nœuds Proxmox via endpoint d'agrégation
-  # sur le bastion (api.aonyx.fr/health/node/<id>) :
+  # Cluster Proxmox : probe TCP :22 via endpoint d'agrégation sur le bastion
+  # (PHP script à /var/www/health.aonyx.dev/index.php, mod_php sur Apache).
+  # Note: HTTP pour l'instant — HTTPS via LE à activer quand fail2ban se débloque.
   # ----------------------------------------------------------
-  # - name: Cluster · minecraft-location (.5)
-  #   url: https://api.aonyx.fr/health/node/minecraft-location
-  # - name: Cluster · aonyx-sites (.205)
-  #   url: https://api.aonyx.fr/health/node/aonyx-sites
-  # - name: Cluster · aonyx-sites-clstr2 (.206)
-  #   url: https://api.aonyx.fr/health/node/aonyx-sites-clstr2
-  # - name: Cluster · aonyx-sites-clstr3 (.207)
-  #   url: https://api.aonyx.fr/health/node/aonyx-sites-clstr3
-  # - name: Cluster · aonyx-sites-clstr4 (.208)
-  #   url: https://api.aonyx.fr/health/node/aonyx-sites-clstr4
-  # - name: Bastion (.100)
-  #   url: https://api.aonyx.fr/health/bastion
+  - name: Cluster · aonyx (host mediaserver, .105)
+    url: http://health.aonyx.dev/?node=aonyx
+    expectedStatusCodes: [200]
+
+  - name: Cluster · minecraft-location (.5)
+    url: http://health.aonyx.dev/?node=minecraft-location
+    expectedStatusCodes: [200]
+
+  - name: Cluster · aonyx-sites (.205)
+    url: http://health.aonyx.dev/?node=aonyx-sites
+    expectedStatusCodes: [200]
+
+  - name: Cluster · aonyx-sites-clstr2 (.206)
+    url: http://health.aonyx.dev/?node=aonyx-sites-clstr2
+    expectedStatusCodes: [200]
+
+  - name: Cluster · aonyx-sites-clstr3 (.207)
+    url: http://health.aonyx.dev/?node=aonyx-sites-clstr3
+    expectedStatusCodes: [200]
+
+  - name: Cluster · aonyx-sites-clstr4 (.208)
+    url: http://health.aonyx.dev/?node=aonyx-sites-clstr4
+    expectedStatusCodes: [200]
+
+  - name: Edge · bastion Pi (.100)
+    url: http://health.aonyx.dev/?node=bastion
+    expectedStatusCodes: [200]
+
+  - name: Stockage · NAS Pi (.120)
+    url: http://health.aonyx.dev/?node=nas
+    expectedStatusCodes: [200]
 
 # ------------------------------------------------------------
 # Branding du status website public
