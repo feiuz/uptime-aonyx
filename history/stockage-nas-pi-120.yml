@@ -1,7 +1,7 @@
 url: http://health.aonyx.dev/?node=nas
-status: down
-code: 0
-responseTime: 0
-lastUpdated: 2026-05-23T16:46:04.817Z
+status: up
+code: 200
+responseTime: 302
+lastUpdated: 2026-05-23T17:15:15.287Z
 startTime: 2026-05-23T11:51:18.705Z
 generator: Upptime <https://github.com/upptime/upptime>
