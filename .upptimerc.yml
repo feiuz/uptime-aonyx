@@ -1,31 +1,73 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# ============================================================
+# Upptime — status page Aonyx Hosting
+# https://uptime.aonyx.fr — sondage indépendant via GitHub Actions
+# ============================================================
 
+owner: feiuz
+repo: uptime-aonyx
+
+# ------------------------------------------------------------
+# Monitors V1 : services publics partagés (frontaux Cloudflare → bastion)
+# ------------------------------------------------------------
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+  - name: Aonyx Hosting (commercial)
+    url: https://aonyx.site
+    # Cloudflare → bastion → vhost statique. Tolère redirects.
+    expectedStatusCodes: [200, 301, 302, 303, 307, 308]
 
+  - name: Espace client
+    url: https://account.aonyx.site
+    expectedStatusCodes: [200, 301, 302, 303, 307, 308]
+
+  - name: SSO Authentik
+    url: https://auth.aonyx.site
+    # 302 vers /outpost.goauthentik.io/start = la chaîne SSO répond
+    expectedStatusCodes: [200, 302]
+
+  # ----------------------------------------------------------
+  # V2 (à venir) — état des nœuds Proxmox via endpoint d'agrégation
+  # sur le bastion (api.aonyx.fr/health/node/<id>) :
+  # ----------------------------------------------------------
+  # - name: Cluster · minecraft-location (.5)
+  #   url: https://api.aonyx.fr/health/node/minecraft-location
+  # - name: Cluster · aonyx-sites (.205)
+  #   url: https://api.aonyx.fr/health/node/aonyx-sites
+  # - name: Cluster · aonyx-sites-clstr2 (.206)
+  #   url: https://api.aonyx.fr/health/node/aonyx-sites-clstr2
+  # - name: Cluster · aonyx-sites-clstr3 (.207)
+  #   url: https://api.aonyx.fr/health/node/aonyx-sites-clstr3
+  # - name: Cluster · aonyx-sites-clstr4 (.208)
+  #   url: https://api.aonyx.fr/health/node/aonyx-sites-clstr4
+  # - name: Bastion (.100)
+  #   url: https://api.aonyx.fr/health/bastion
+
+# ------------------------------------------------------------
+# Branding du status website public
+# ------------------------------------------------------------
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
-  navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+  cname: uptime.aonyx.fr
+  name: Aonyx Hosting · Status
+  introTitle: "**Aonyx Hosting** — état des services en temps réel"
+  introMessage: |
+    État en temps réel des services partagés de l'infrastructure Aonyx Hosting.
+    Les sondes tournent sur GitHub Actions toutes les 5 minutes — **indépendant de notre infrastructure** :
+    si tout tombe chez nous, cette page reste accessible et reflète l'incident.
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    Pour l'état spécifique de votre site, connectez-vous sur votre [espace client](https://account.aonyx.site).
+  navbar:
+    - title: Statut
+      href: /
+    - title: Espace client
+      href: https://account.aonyx.site
+    - title: Site
+      href: https://aonyx.site
+  logoUrl: https://aonyx.site/logo.png   # adapter si besoin / supprimer pour le logo Upptime par défaut
+  theme: light
+
+# ------------------------------------------------------------
+# Notifications (à activer plus tard — webhook Discord ou autre)
+# https://upptime.js.org/docs/notifications
+# ------------------------------------------------------------
+# notifications:
+#   - type: webhook
+#     url: $DISCORD_WEBHOOK_URL    # à mettre en secret GitHub
