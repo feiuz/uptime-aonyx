@@ -7,12 +7,19 @@ owner: feiuz
 repo: uptime-aonyx
 
 # ------------------------------------------------------------
-# Monitors V1 : services publics partagés (frontaux Cloudflare → bastion)
+# Monitors : services publics partagés (frontaux Cloudflare → bastion .100)
 # ------------------------------------------------------------
 sites:
+  # ----------------------------------------------------------
+  # Vitrines publiques
+  # ----------------------------------------------------------
   - name: Aonyx Hosting (commercial)
     url: https://aonyx.site
-    # Cloudflare → bastion → vhost statique. Tolère redirects.
+    # CF → bastion → ProxyPass control-plane (CT 400) → Next.js landing
+    expectedStatusCodes: [200, 301, 302, 303, 307, 308]
+
+  - name: Aonyx (vitrine .fr)
+    url: https://aonyx.fr
     expectedStatusCodes: [200, 301, 302, 303, 307, 308]
 
   - name: Espace client
@@ -24,41 +31,47 @@ sites:
     # 302 vers /outpost.goauthentik.io/start = la chaîne SSO répond
     expectedStatusCodes: [200, 302]
 
+  - name: Control plane (manager)
+    url: https://manager.aonyx.site
+    # Authentik forward_auth → 302 vers /outpost.goauthentik.io/start
+    expectedStatusCodes: [200, 302]
+
   # ----------------------------------------------------------
-  # Cluster Proxmox : probe TCP :22 via endpoint d'agrégation sur le bastion
-  # (PHP script à /var/www/health.aonyx.dev/index.php, mod_php sur Apache).
-  # Note: HTTP pour l'instant — HTTPS via LE à activer quand fail2ban se débloque.
+  # Health endpoint d'agrégation (bastion Apache + mod_php)
+  # Cert Let's Encrypt installé le 2026-05-26 → switch HTTPS.
+  # /var/www/health.aonyx.dev/index.php → 200 si TCP :22 du node répond.
   # ----------------------------------------------------------
-  - name: Cluster · aonyx (host mediaserver, .105)
-    url: http://health.aonyx.dev/?node=aonyx
+  - name: Edge · bastion Pi (.100)
+    # Le endpoint lui-même : si le bastion tombe, ça répond pas → on l'utilise comme probe edge.
+    url: https://health.aonyx.dev/
+    expectedStatusCodes: [200]
+
+  - name: Cluster · aonyx (.105)
+    url: https://health.aonyx.dev/?node=aonyx
     expectedStatusCodes: [200]
 
   - name: Cluster · minecraft-location (.5)
-    url: http://health.aonyx.dev/?node=minecraft-location
+    url: https://health.aonyx.dev/?node=minecraft-location
     expectedStatusCodes: [200]
 
   - name: Cluster · aonyx-sites (.205)
-    url: http://health.aonyx.dev/?node=aonyx-sites
+    url: https://health.aonyx.dev/?node=aonyx-sites
     expectedStatusCodes: [200]
 
   - name: Cluster · aonyx-sites-clstr2 (.206)
-    url: http://health.aonyx.dev/?node=aonyx-sites-clstr2
+    url: https://health.aonyx.dev/?node=aonyx-sites-clstr2
     expectedStatusCodes: [200]
 
   - name: Cluster · aonyx-sites-clstr3 (.207)
-    url: http://health.aonyx.dev/?node=aonyx-sites-clstr3
+    url: https://health.aonyx.dev/?node=aonyx-sites-clstr3
     expectedStatusCodes: [200]
 
   - name: Cluster · aonyx-sites-clstr4 (.208)
-    url: http://health.aonyx.dev/?node=aonyx-sites-clstr4
-    expectedStatusCodes: [200]
-
-  - name: Edge · bastion Pi (.100)
-    url: http://health.aonyx.dev/?node=bastion
+    url: https://health.aonyx.dev/?node=aonyx-sites-clstr4
     expectedStatusCodes: [200]
 
   - name: Stockage · NAS Pi (.120)
-    url: http://health.aonyx.dev/?node=nas
+    url: https://health.aonyx.dev/?node=nas
     expectedStatusCodes: [200]
 
 # ------------------------------------------------------------
