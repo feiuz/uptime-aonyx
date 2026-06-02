@@ -1,7 +1,7 @@
 url: https://auth.aonyx.site
-status: up
-code: 200
-responseTime: 1367
-lastUpdated: 2026-06-02T00:07:58.463Z
+status: down
+code: 502
+responseTime: 585
+lastUpdated: 2026-06-02T23:15:12.948Z
 startTime: 2026-05-23T11:22:41.471Z
 generator: Upptime <https://github.com/upptime/upptime>
