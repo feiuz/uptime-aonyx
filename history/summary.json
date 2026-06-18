@@ -4,17 +4,17 @@
     "url": "https://aonyx.site",
     "icon": "https://icons.duckduckgo.com/ip3/aonyx.site.ico",
     "slug": "aonyx-hosting-commercial",
-    "status": "up",
-    "uptime": "75.70%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "75.70%",
-    "uptimeYear": "75.70%",
-    "time": 2250,
-    "timeDay": 764,
-    "timeWeek": 517,
-    "timeMonth": 2250,
-    "timeYear": 2250,
+    "status": "down",
+    "uptime": "76.20%",
+    "uptimeDay": "97.20%",
+    "uptimeWeek": "99.60%",
+    "uptimeMonth": "76.20%",
+    "uptimeYear": "76.20%",
+    "time": 2274,
+    "timeDay": 1939,
+    "timeWeek": 841,
+    "timeMonth": 2274,
+    "timeYear": 2274,
     "dailyMinutesDown": {
       "2026-05-26": 1224,
       "2026-05-25": 1440,
@@ -24,7 +24,8 @@
       "2026-05-27": 71,
       "2026-05-30": 1155,
       "2026-05-29": 1440,
-      "2026-05-31": 648
+      "2026-05-31": 648,
+      "2026-06-18": 40
     }
   },
   {
@@ -32,23 +33,24 @@
     "url": "https://aonyx.fr",
     "icon": "https://icons.duckduckgo.com/ip3/aonyx.fr.ico",
     "slug": "aonyx-vitrine-fr",
-    "status": "up",
-    "uptime": "87.15%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "87.15%",
-    "uptimeYear": "87.15%",
-    "time": 2416,
-    "timeDay": 615,
-    "timeWeek": 442,
-    "timeMonth": 2416,
-    "timeYear": 2416,
+    "status": "down",
+    "uptime": "87.39%",
+    "uptimeDay": "97.23%",
+    "uptimeWeek": "99.60%",
+    "uptimeMonth": "87.39%",
+    "uptimeYear": "87.39%",
+    "time": 2439,
+    "timeDay": 1861,
+    "timeWeek": 775,
+    "timeMonth": 2439,
+    "timeYear": 2439,
     "dailyMinutesDown": {
       "2026-05-28": 823,
       "2026-05-27": 71,
       "2026-05-30": 1154,
       "2026-05-29": 1440,
-      "2026-05-31": 649
+      "2026-05-31": 649,
+      "2026-06-18": 40
     }
   },
   {
@@ -56,17 +58,17 @@
     "url": "https://account.aonyx.site",
     "icon": "https://icons.duckduckgo.com/ip3/account.aonyx.site.ico",
     "slug": "espace-client",
-    "status": "up",
-    "uptime": "86.48%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "86.48%",
-    "uptimeYear": "86.48%",
-    "time": 3305,
-    "timeDay": 567,
-    "timeWeek": 405,
-    "timeMonth": 3305,
-    "timeYear": 3305,
+    "status": "down",
+    "uptime": "86.71%",
+    "uptimeDay": "97.25%",
+    "uptimeWeek": "99.61%",
+    "uptimeMonth": "86.71%",
+    "uptimeYear": "86.71%",
+    "time": 3284,
+    "timeDay": 1466,
+    "timeWeek": 650,
+    "timeMonth": 3284,
+    "timeYear": 3284,
     "dailyMinutesDown": {
       "2026-05-23": 125,
       "2026-05-24": 48,
@@ -76,7 +78,8 @@
       "2026-05-27": 70,
       "2026-05-30": 1153,
       "2026-05-29": 1440,
-      "2026-05-31": 649
+      "2026-05-31": 649,
+      "2026-06-18": 40
     }
   },
   {
@@ -84,17 +87,17 @@
     "url": "https://auth.aonyx.site",
     "icon": "https://icons.duckduckgo.com/ip3/auth.aonyx.site.ico",
     "slug": "sso-authentik",
-    "status": "up",
-    "uptime": "84.07%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "84.07%",
-    "uptimeYear": "84.07%",
-    "time": 5949,
-    "timeDay": 1755,
-    "timeWeek": 1268,
-    "timeMonth": 5949,
-    "timeYear": 5949,
+    "status": "down",
+    "uptime": "84.36%",
+    "uptimeDay": "97.27%",
+    "uptimeWeek": "99.61%",
+    "uptimeMonth": "84.36%",
+    "uptimeYear": "84.36%",
+    "time": 5845,
+    "timeDay": 1207,
+    "timeWeek": 1192,
+    "timeMonth": 5845,
+    "timeYear": 5845,
     "dailyMinutesDown": {
       "2026-05-23": 124,
       "2026-05-24": 39,
@@ -109,7 +112,8 @@
       "2026-06-02": 45,
       "2026-06-04": 155,
       "2026-06-05": 159,
-      "2026-06-06": 522
+      "2026-06-06": 522,
+      "2026-06-18": 39
     }
   },
   {
@@ -129,7 +133,7 @@
     "timeMonth": 5913,
     "timeYear": 5913,
     "dailyMinutesDown": {
-      "2026-06-18": 283,
+      "2026-06-18": 1221,
       "2026-06-17": 1440,
       "2026-06-16": 1440,
       "2026-06-15": 1440,
@@ -160,12 +164,12 @@
     "url": "https://health.aonyx.dev/",
     "icon": "https://icons.duckduckgo.com/ip3/health.aonyx.dev.ico",
     "slug": "edge-bastion-pi-100",
-    "status": "up",
-    "uptime": "87.28%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "87.28%",
-    "uptimeYear": "87.28%",
+    "status": "down",
+    "uptime": "87.50%",
+    "uptimeDay": "97.62%",
+    "uptimeWeek": "99.66%",
+    "uptimeMonth": "87.50%",
+    "uptimeYear": "87.50%",
     "time": 452,
     "timeDay": 485,
     "timeWeek": 397,
@@ -179,7 +183,8 @@
       "2026-05-27": 70,
       "2026-05-30": 1146,
       "2026-05-29": 1440,
-      "2026-05-31": 649
+      "2026-05-31": 649,
+      "2026-06-18": 34
     }
   },
   {
@@ -187,12 +192,12 @@
     "url": "https://health.aonyx.dev/?node=aonyx",
     "icon": "https://icons.duckduckgo.com/ip3/health.aonyx.dev.ico",
     "slug": "cluster-aonyx-105",
-    "status": "up",
-    "uptime": "87.23%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "87.23%",
-    "uptimeYear": "87.23%",
+    "status": "down",
+    "uptime": "87.50%",
+    "uptimeDay": "97.96%",
+    "uptimeWeek": "99.71%",
+    "uptimeMonth": "87.50%",
+    "uptimeYear": "87.50%",
     "time": 401,
     "timeDay": 458,
     "timeWeek": 352,
@@ -203,7 +208,8 @@
       "2026-05-27": 69,
       "2026-05-30": 1142,
       "2026-05-29": 1440,
-      "2026-05-31": 649
+      "2026-05-31": 649,
+      "2026-06-18": 29
     }
   },
   {
@@ -211,12 +217,12 @@
     "url": "https://health.aonyx.dev/?node=minecraft-location",
     "icon": "https://icons.duckduckgo.com/ip3/health.aonyx.dev.ico",
     "slug": "cluster-minecraft-location-5",
-    "status": "up",
-    "uptime": "87.02%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "87.02%",
-    "uptimeYear": "87.02%",
+    "status": "down",
+    "uptime": "87.28%",
+    "uptimeDay": "98.30%",
+    "uptimeWeek": "99.76%",
+    "uptimeMonth": "87.28%",
+    "uptimeYear": "87.28%",
     "time": 540,
     "timeDay": 467,
     "timeWeek": 355,
@@ -231,7 +237,8 @@
       "2026-05-27": 69,
       "2026-05-30": 1137,
       "2026-05-29": 1440,
-      "2026-05-31": 649
+      "2026-05-31": 649,
+      "2026-06-18": 24
     }
   },
   {
@@ -239,12 +246,12 @@
     "url": "https://health.aonyx.dev/?node=aonyx-sites",
     "icon": "https://icons.duckduckgo.com/ip3/health.aonyx.dev.ico",
     "slug": "cluster-aonyx-sites-205",
-    "status": "up",
-    "uptime": "87.15%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "87.15%",
-    "uptimeYear": "87.15%",
+    "status": "down",
+    "uptime": "87.42%",
+    "uptimeDay": "98.64%",
+    "uptimeWeek": "99.81%",
+    "uptimeMonth": "87.42%",
+    "uptimeYear": "87.42%",
     "time": 385,
     "timeDay": 455,
     "timeWeek": 352,
@@ -258,7 +265,8 @@
       "2026-05-27": 69,
       "2026-05-30": 1132,
       "2026-05-29": 1440,
-      "2026-05-31": 649
+      "2026-05-31": 649,
+      "2026-06-18": 20
     }
   },
   {
@@ -266,12 +274,12 @@
     "url": "https://health.aonyx.dev/?node=aonyx-sites-clstr2",
     "icon": "https://icons.duckduckgo.com/ip3/health.aonyx.dev.ico",
     "slug": "cluster-aonyx-sites-clstr2-206",
-    "status": "up",
-    "uptime": "87.23%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "87.23%",
-    "uptimeYear": "87.23%",
+    "status": "down",
+    "uptime": "87.51%",
+    "uptimeDay": "98.98%",
+    "uptimeWeek": "99.85%",
+    "uptimeMonth": "87.51%",
+    "uptimeYear": "87.51%",
     "time": 376,
     "timeDay": 425,
     "timeWeek": 355,
@@ -285,7 +293,8 @@
       "2026-05-27": 69,
       "2026-05-30": 1127,
       "2026-05-29": 1440,
-      "2026-05-31": 649
+      "2026-05-31": 649,
+      "2026-06-18": 15
     }
   },
   {
@@ -293,12 +302,12 @@
     "url": "https://health.aonyx.dev/?node=aonyx-sites-clstr3",
     "icon": "https://icons.duckduckgo.com/ip3/health.aonyx.dev.ico",
     "slug": "cluster-aonyx-sites-clstr3-207",
-    "status": "up",
-    "uptime": "87.31%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "87.31%",
-    "uptimeYear": "87.31%",
+    "status": "down",
+    "uptime": "87.60%",
+    "uptimeDay": "99.31%",
+    "uptimeWeek": "99.90%",
+    "uptimeMonth": "87.60%",
+    "uptimeYear": "87.60%",
     "time": 384,
     "timeDay": 495,
     "timeWeek": 361,
@@ -312,7 +321,8 @@
       "2026-05-27": 68,
       "2026-05-30": 1122,
       "2026-05-29": 1440,
-      "2026-05-31": 649
+      "2026-05-31": 649,
+      "2026-06-18": 10
     }
   },
   {
@@ -320,12 +330,12 @@
     "url": "https://health.aonyx.dev/?node=aonyx-sites-clstr4",
     "icon": "https://icons.duckduckgo.com/ip3/health.aonyx.dev.ico",
     "slug": "cluster-aonyx-sites-clstr4-208",
-    "status": "up",
-    "uptime": "87.39%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "87.39%",
-    "uptimeYear": "87.39%",
+    "status": "down",
+    "uptime": "87.69%",
+    "uptimeDay": "99.65%",
+    "uptimeWeek": "99.95%",
+    "uptimeMonth": "87.69%",
+    "uptimeYear": "87.69%",
     "time": 387,
     "timeDay": 435,
     "timeWeek": 351,
@@ -339,7 +349,8 @@
       "2026-05-27": 68,
       "2026-05-30": 1117,
       "2026-05-29": 1440,
-      "2026-05-31": 649
+      "2026-05-31": 649,
+      "2026-06-18": 5
     }
   },
   {
@@ -347,12 +358,12 @@
     "url": "https://health.aonyx.dev/?node=nas",
     "icon": "https://icons.duckduckgo.com/ip3/health.aonyx.dev.ico",
     "slug": "stockage-nas-pi-120",
-    "status": "up",
-    "uptime": "87.52%",
-    "uptimeDay": "100.00%",
+    "status": "down",
+    "uptime": "87.83%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "87.52%",
-    "uptimeYear": "87.52%",
+    "uptimeMonth": "87.83%",
+    "uptimeYear": "87.83%",
     "time": 511,
     "timeDay": 544,
     "timeWeek": 377,
@@ -366,7 +377,8 @@
       "2026-05-27": 68,
       "2026-05-30": 1112,
       "2026-05-29": 1440,
-      "2026-05-31": 649
+      "2026-05-31": 649,
+      "2026-06-18": 0
     }
   }
 ]
