@@ -1,7 +1,7 @@
 url: https://health.aonyx.dev/?node=aonyx-sites-clstr2
-status: up
-code: 200
-responseTime: 526
-lastUpdated: 2026-06-29T00:02:45.176Z
+status: down
+code: 503
+responseTime: 2361
+lastUpdated: 2026-06-29T01:42:49.507Z
 startTime: 2026-05-23T11:51:17.110Z
 generator: Upptime <https://github.com/upptime/upptime>
