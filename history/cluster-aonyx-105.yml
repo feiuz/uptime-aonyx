@@ -1,7 +1,7 @@
 url: https://health.aonyx.dev/?node=aonyx
-status: up
-code: 200
-responseTime: 502
-lastUpdated: 2026-06-29T00:02:43.587Z
+status: down
+code: 503
+responseTime: 2321
+lastUpdated: 2026-06-29T01:41:48.809Z
 startTime: 2026-05-26T20:24:07.662Z
 generator: Upptime <https://github.com/upptime/upptime>
